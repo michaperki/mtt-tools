@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poker Tournament Big Blinds Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Poker Tournament Big Blinds Calculator</h1>
+    <form id="calculator-form">
+      <div class="form-group">
+        <label for="chip-count">Number of Chips:</label>
+        <input type="number" id="chip-count" name="chip-count" required>
+      </div>
+      <div class="form-group">
+        <label for="blind-level">Blind Level:</label>
+        <select id="blind-level" name="blind-level" required>
+          <option value="">-- Select Blind Level --</option>
+          <option value="10/20">10/20</option>
+          <option value="25/50">25/50</option>
+          <option value="50/100">50/100</option>
+          <option value="100/200">100/200</option>
+          <option value="200/400">200/400</option>
+        </select>
+      </div>
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
